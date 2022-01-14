@@ -3,8 +3,7 @@
     ~~~~~~~~~~~~~~~~~~~~~~~
 
 """
-from six import string_types
-from collections import Mapping, Sequence, Set
+from collections.abc import Mapping, Sequence, Set
 
 class Staged(object):
     obj = None
@@ -58,7 +57,7 @@ def stage(obj, parent=None, member=None):
     if isinstance(obj, Mapping):
         for key, value in obj.items():
             stage(value, obj, key)
-    elif isinstance(obj, Sequence) and not isinstance(obj, string_types):
+    elif isinstance(obj, Sequence) and not isinstance(obj, str):
         for index, value in enumerate(obj):
             stage(value, obj, index)
     elif isinstance(obj, Set):

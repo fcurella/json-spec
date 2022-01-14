@@ -6,6 +6,8 @@ from setuptools import setup, find_packages
 setup(
     name='json-spec',
     version=versioneer.get_version(),
+    maintainer="Flavio Curella",
+    maintainer_email="flavio.curella@gmail.com",
     description='Implements JSON Schema, JSON Pointer and JSON Reference.',
     author='Xavier Barbosa',
     author_email='clint.northwood@gmail.com',
@@ -37,24 +39,18 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5'
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
+        'Programming Language :: Python :: 3.10',
     ],
     install_requires=[
         'six',
     ],
     extras_require={
-        'ip': [],
-        'ip:python_version=="2.7"': ['ipaddress'],
-        'ip:python_version=="3.2"': ['ipaddress'],
         'cli': ['termcolor'],
-        ':python_version=="2.7"': ['pathlib'],
-        ':python_version=="3.2"': ['pathlib'],
-        ':python_version=="3.3"': ['pathlib']
     },
     entry_points={
         'console_scripts': [
@@ -76,8 +72,8 @@ setup(
         'jsonspec.validators.formats': [
             'email = jsonspec.validators.util:validate_email',
             'hostname = jsonspec.validators.util:validate_hostname',
-            'ipv4 = jsonspec.validators.util:validate_ipv4 [ip]',
-            'ipv6 = jsonspec.validators.util:validate_ipv6 [ip]',
+            'ipv4 = jsonspec.validators.util:validate_ipv4',
+            'ipv6 = jsonspec.validators.util:validate_ipv6',
             'regex = jsonspec.validators.util:validate_regex',
             'uri = jsonspec.validators.util:validate_uri',
             'css.color = jsonspec.validators.util:validate_css_color',

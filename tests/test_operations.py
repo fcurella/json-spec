@@ -5,7 +5,7 @@
 """
 
 import pytest
-from collections import Mapping, Sequence
+from collections.abc import Mapping, Sequence
 from . import TestMappingType, TestSequenceType
 from jsonspec.operations import check, remove, add, replace, copy, move
 from jsonspec.operations import Error, NonexistentTarget

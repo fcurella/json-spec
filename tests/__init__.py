@@ -10,7 +10,7 @@ import logging
 import os.path
 import unittest
 from contextlib import contextmanager
-from collections import MutableMapping, MutableSequence
+from collections.abc import MutableMapping, MutableSequence
 
 logging.basicConfig(level=logging.INFO)
 
