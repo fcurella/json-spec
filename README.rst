@@ -19,16 +19,16 @@ Installation
 
 This library has only weak dependencies. You can simply use pip::
 
-    $ pip install json-spec
+    $ pip install json-spec3
 
 Regading you needs, you can install more features. For example, this command
 will enable colorated messages::
 
-    $ pip install json-spec[cli]
+    $ pip install json-spec3[cli]
 
 This one will enable ip format for json schema::
 
-    $ pip install json-spec[ip]
+    $ pip install json-spec3[ip]
 
 ...
 

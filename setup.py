@@ -4,7 +4,7 @@ import versioneer
 from setuptools import setup, find_packages
 
 setup(
-    name='json-spec',
+    name='json-spec3',
     version=versioneer.get_version(),
     maintainer="Flavio Curella",
     maintainer_email="flavio.curella@gmail.com",
@@ -12,7 +12,7 @@ setup(
     author='Xavier Barbosa',
     author_email='clint.northwood@gmail.com',
     license='BSD',
-    url='http://py.errorist.io/json-spec',
+    url='https://github.com/fcurella/json-spec/',
     package_dir={'': 'src'},
     packages=find_packages('src'),
     package_data={
