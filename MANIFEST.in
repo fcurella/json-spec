@@ -1,11 +1,19 @@
 include AUTHORS
 include CONTRIBUTING.rst
 include LICENSE
+include CHANGELOG
+include HISTORY.rst
 include README.rst
 include versioneer.py
 include src/jsonspec/_version.py
+include tox.ini
+exclude requirements-tests.txt
+exclude .gitmodules
+exclude Makefile
 recursive-include src/jsonspec/misc/schemas *.json
-recursive-include tests *
+recursive-exclude tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
-recursive-include docs *.rst conf.py Makefile make.bat
+recursive-exclude * *.txt
+recursive-include docs *.rst conf.py Makefile make.bat *.gitkeep
+graft examples
