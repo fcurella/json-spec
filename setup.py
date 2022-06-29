@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='json-spec3',
-    version=versioneer.get_version(),
+    version="0.10.1",
     maintainer="Flavio Curella",
     maintainer_email="flavio.curella@gmail.com",
     description='Implements JSON Schema, JSON Pointer and JSON Reference.',
@@ -84,5 +84,4 @@ setup(
             'utc.millisec = jsonspec.validators.util:validate_utc_millisec',
         ]
     },
-    cmdclass=versioneer.get_cmdclass()
 )

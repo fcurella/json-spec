@@ -4,7 +4,6 @@ include LICENSE
 include CHANGELOG
 include HISTORY.rst
 include README.rst
-include versioneer.py
 include src/jsonspec/_version.py
 include tox.ini
 exclude requirements-tests.txt
