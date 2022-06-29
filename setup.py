@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='json-spec3',
-    version="0.10.1",
+    version="1.0.0",
     maintainer="Flavio Curella",
     maintainer_email="flavio.curella@gmail.com",
     description='Implements JSON Schema, JSON Pointer and JSON Reference.',
